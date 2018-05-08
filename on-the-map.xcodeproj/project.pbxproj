@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB270BE220A22DC100AAE886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BE120A22DC100AAE886 /* AppDelegate.swift */; };
+		EB270BE920A22DC100AAE886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB270BE720A22DC100AAE886 /* Main.storyboard */; };
+		EB270BEB20A22DC500AAE886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB270BEA20A22DC500AAE886 /* Assets.xcassets */; };
+		EB270BEE20A22DC500AAE886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB270BEC20A22DC500AAE886 /* LaunchScreen.storyboard */; };
+		EB270BF720A2419500AAE886 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BF620A2419500AAE886 /* LoginViewController.swift */; };
+		EB270BF920A241BC00AAE886 /* StudentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BF820A241BC00AAE886 /* StudentsTableViewController.swift */; };
+		EB270BFB20A241D600AAE886 /* StudentsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BFA20A241D600AAE886 /* StudentsMapViewController.swift */; };
+		EB270BFD20A241EC00AAE886 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BFC20A241EC00AAE886 /* AddLocationViewController.swift */; };
+		EB270BFF20A241FF00AAE886 /* AddLocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BFE20A241FF00AAE886 /* AddLocationMapViewController.swift */; };
+		EB270C0120A2422900AAE886 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270C0020A2422900AAE886 /* WebViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB270BDE20A22DC100AAE886 /* on-the-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "on-the-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB270BE120A22DC100AAE886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB270BE820A22DC100AAE886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB270BEA20A22DC500AAE886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB270BED20A22DC500AAE886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB270BEF20A22DC500AAE886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB270BF620A2419500AAE886 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB270BF820A241BC00AAE886 /* StudentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewController.swift; sourceTree = "<group>"; };
+		EB270BFA20A241D600AAE886 /* StudentsMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsMapViewController.swift; sourceTree = "<group>"; };
+		EB270BFC20A241EC00AAE886 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		EB270BFE20A241FF00AAE886 /* AddLocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationMapViewController.swift; sourceTree = "<group>"; };
+		EB270C0020A2422900AAE886 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB270BDB20A22DC100AAE886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB270BD520A22DC100AAE886 = {
+			isa = PBXGroup;
+			children = (
+				EB270BE020A22DC100AAE886 /* on-the-map */,
+				EB270BDF20A22DC100AAE886 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB270BDF20A22DC100AAE886 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB270BDE20A22DC100AAE886 /* on-the-map.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB270BE020A22DC100AAE886 /* on-the-map */ = {
+			isa = PBXGroup;
+			children = (
+				EB270BF520A2416600AAE886 /* View Controllers */,
+				EB270BE120A22DC100AAE886 /* AppDelegate.swift */,
+				EB270BE720A22DC100AAE886 /* Main.storyboard */,
+				EB270BEA20A22DC500AAE886 /* Assets.xcassets */,
+				EB270BEC20A22DC500AAE886 /* LaunchScreen.storyboard */,
+				EB270BEF20A22DC500AAE886 /* Info.plist */,
+			);
+			path = "on-the-map";
+			sourceTree = "<group>";
+		};
+		EB270BF520A2416600AAE886 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB270BF620A2419500AAE886 /* LoginViewController.swift */,
+				EB270BF820A241BC00AAE886 /* StudentsTableViewController.swift */,
+				EB270BFA20A241D600AAE886 /* StudentsMapViewController.swift */,
+				EB270BFC20A241EC00AAE886 /* AddLocationViewController.swift */,
+				EB270BFE20A241FF00AAE886 /* AddLocationMapViewController.swift */,
+				EB270C0020A2422900AAE886 /* WebViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB270BDD20A22DC100AAE886 /* on-the-map */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB270BF220A22DC500AAE886 /* Build configuration list for PBXNativeTarget "on-the-map" */;
+			buildPhases = (
+				EB270BDA20A22DC100AAE886 /* Sources */,
+				EB270BDB20A22DC100AAE886 /* Frameworks */,
+				EB270BDC20A22DC100AAE886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "on-the-map";
+			productName = "on-the-map";
+			productReference = EB270BDE20A22DC100AAE886 /* on-the-map.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB270BD620A22DC100AAE886 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Pedro Chiossi";
+				TargetAttributes = {
+					EB270BDD20A22DC100AAE886 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = EB270BD920A22DC100AAE886 /* Build configuration list for PBXProject "on-the-map" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB270BD520A22DC100AAE886;
+			productRefGroup = EB270BDF20A22DC100AAE886 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB270BDD20A22DC100AAE886 /* on-the-map */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB270BDC20A22DC100AAE886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB270BEE20A22DC500AAE886 /* LaunchScreen.storyboard in Resources */,
+				EB270BEB20A22DC500AAE886 /* Assets.xcassets in Resources */,
+				EB270BE920A22DC100AAE886 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB270BDA20A22DC100AAE886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB270BF920A241BC00AAE886 /* StudentsTableViewController.swift in Sources */,
+				EB270BFB20A241D600AAE886 /* StudentsMapViewController.swift in Sources */,
+				EB270BFD20A241EC00AAE886 /* AddLocationViewController.swift in Sources */,
+				EB270BF720A2419500AAE886 /* LoginViewController.swift in Sources */,
+				EB270C0120A2422900AAE886 /* WebViewController.swift in Sources */,
+				EB270BFF20A241FF00AAE886 /* AddLocationMapViewController.swift in Sources */,
+				EB270BE220A22DC100AAE886 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB270BE720A22DC100AAE886 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB270BE820A22DC100AAE886 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB270BEC20A22DC500AAE886 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB270BED20A22DC500AAE886 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB270BF020A22DC500AAE886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB270BF120A22DC500AAE886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB270BF320A22DC500AAE886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 794X734999;
+				INFOPLIST_FILE = "on-the-map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pedrochiossi.on-the-map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB270BF420A22DC500AAE886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 794X734999;
+				INFOPLIST_FILE = "on-the-map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pedrochiossi.on-the-map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB270BD920A22DC100AAE886 /* Build configuration list for PBXProject "on-the-map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB270BF020A22DC500AAE886 /* Debug */,
+				EB270BF120A22DC500AAE886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB270BF220A22DC500AAE886 /* Build configuration list for PBXNativeTarget "on-the-map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB270BF320A22DC500AAE886 /* Debug */,
+				EB270BF420A22DC500AAE886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB270BD620A22DC100AAE886 /* Project object */;
+}
