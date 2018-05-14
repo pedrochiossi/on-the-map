@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9B348167244FCAF567DC583 /* Pods_on_the_map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66669CA66E40CBE18C69F505 /* Pods_on_the_map.framework */; };
+		EB13F7D220A3B9E7003CEA53 /* UdacityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13F7D120A3B9E7003CEA53 /* UdacityConstants.swift */; };
+		EB13F7D820A3DC82003CEA53 /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13F7D720A3DC82003CEA53 /* UdacityClient.swift */; };
+		EB13F7DA20A3FED8003CEA53 /* UdacityConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13F7D920A3FED8003CEA53 /* UdacityConvenience.swift */; };
+		EB13F7DC20A50E30003CEA53 /* ParseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13F7DB20A50E30003CEA53 /* ParseConstants.swift */; };
+		EB24D58720A5A65900C06E6B /* ParseConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB24D58620A5A65900C06E6B /* ParseConvenience.swift */; };
 		EB270BE220A22DC100AAE886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BE120A22DC100AAE886 /* AppDelegate.swift */; };
 		EB270BE920A22DC100AAE886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB270BE720A22DC100AAE886 /* Main.storyboard */; };
 		EB270BEB20A22DC500AAE886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB270BEA20A22DC500AAE886 /* Assets.xcassets */; };
 		EB270BEE20A22DC500AAE886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB270BEC20A22DC500AAE886 /* LaunchScreen.storyboard */; };
 		EB270BF720A2419500AAE886 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BF620A2419500AAE886 /* LoginViewController.swift */; };
-		EB270BF920A241BC00AAE886 /* StudentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BF820A241BC00AAE886 /* StudentsTableViewController.swift */; };
 		EB270BFB20A241D600AAE886 /* StudentsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BFA20A241D600AAE886 /* StudentsMapViewController.swift */; };
 		EB270BFD20A241EC00AAE886 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BFC20A241EC00AAE886 /* AddLocationViewController.swift */; };
 		EB270BFF20A241FF00AAE886 /* AddLocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270BFE20A241FF00AAE886 /* AddLocationMapViewController.swift */; };
-		EB270C0120A2422900AAE886 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270C0020A2422900AAE886 /* WebViewController.swift */; };
+		EB270C0520A265AF00AAE886 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270C0420A265AF00AAE886 /* TabBarController.swift */; };
+		EB270C0820A354AF00AAE886 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270C0720A354AF00AAE886 /* StudentInformation.swift */; };
+		EB270C1620A35EB400AAE886 /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB270C1520A35EB400AAE886 /* ParseClient.swift */; };
+		EB3C599120A95D52005BA045 /* StudentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C599020A95D52005BA045 /* StudentsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66669CA66E40CBE18C69F505 /* Pods_on_the_map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_on_the_map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7D43245D8D85408051661B /* Pods-on-the-map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-on-the-map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-on-the-map/Pods-on-the-map.debug.xcconfig"; sourceTree = "<group>"; };
+		DB0BBFBFA94B0FEAD2947DA0 /* Pods-on-the-map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-on-the-map.release.xcconfig"; path = "Pods/Target Support Files/Pods-on-the-map/Pods-on-the-map.release.xcconfig"; sourceTree = "<group>"; };
+		EB13F7D120A3B9E7003CEA53 /* UdacityConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityConstants.swift; sourceTree = "<group>"; };
+		EB13F7D720A3DC82003CEA53 /* UdacityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
+		EB13F7D920A3FED8003CEA53 /* UdacityConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityConvenience.swift; sourceTree = "<group>"; };
+		EB13F7DB20A50E30003CEA53 /* ParseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseConstants.swift; sourceTree = "<group>"; };
+		EB24D58620A5A65900C06E6B /* ParseConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseConvenience.swift; sourceTree = "<group>"; };
 		EB270BDE20A22DC100AAE886 /* on-the-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "on-the-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB270BE120A22DC100AAE886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB270BE820A22DC100AAE886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,11 +43,14 @@
 		EB270BED20A22DC500AAE886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB270BEF20A22DC500AAE886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB270BF620A2419500AAE886 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		EB270BF820A241BC00AAE886 /* StudentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewController.swift; sourceTree = "<group>"; };
 		EB270BFA20A241D600AAE886 /* StudentsMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsMapViewController.swift; sourceTree = "<group>"; };
 		EB270BFC20A241EC00AAE886 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		EB270BFE20A241FF00AAE886 /* AddLocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationMapViewController.swift; sourceTree = "<group>"; };
-		EB270C0020A2422900AAE886 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EB270C0420A265AF00AAE886 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EB270C0720A354AF00AAE886 /* StudentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
+		EB270C1520A35EB400AAE886 /* ParseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
+		EB270C1720A365BB00AAE886 /* on-the-map.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "on-the-map.entitlements"; sourceTree = "<group>"; };
+		EB3C599020A95D52005BA045 /* StudentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +58,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B348167244FCAF567DC583 /* Pods_on_the_map.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F43C26C0145FA3DF4854D4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B7D43245D8D85408051661B /* Pods-on-the-map.debug.xcconfig */,
+				DB0BBFBFA94B0FEAD2947DA0 /* Pods-on-the-map.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E98000F3C553E198314ED27B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66669CA66E40CBE18C69F505 /* Pods_on_the_map.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB13F7D520A3CD53003CEA53 /* Udacity */ = {
+			isa = PBXGroup;
+			children = (
+				EB13F7D120A3B9E7003CEA53 /* UdacityConstants.swift */,
+				EB13F7D720A3DC82003CEA53 /* UdacityClient.swift */,
+				EB13F7D920A3FED8003CEA53 /* UdacityConvenience.swift */,
+			);
+			path = Udacity;
+			sourceTree = "<group>";
+		};
+		EB13F7D620A3CD7A003CEA53 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				EB270C1520A35EB400AAE886 /* ParseClient.swift */,
+				EB13F7DB20A50E30003CEA53 /* ParseConstants.swift */,
+				EB24D58620A5A65900C06E6B /* ParseConvenience.swift */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
 		EB270BD520A22DC100AAE886 = {
 			isa = PBXGroup;
 			children = (
 				EB270BE020A22DC100AAE886 /* on-the-map */,
 				EB270BDF20A22DC100AAE886 /* Products */,
+				4F43C26C0145FA3DF4854D4B /* Pods */,
+				E98000F3C553E198314ED27B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,12 +123,14 @@
 		EB270BE020A22DC100AAE886 /* on-the-map */ = {
 			isa = PBXGroup;
 			children = (
+				EB270C0620A3547600AAE886 /* Model */,
 				EB270BF520A2416600AAE886 /* View Controllers */,
 				EB270BE120A22DC100AAE886 /* AppDelegate.swift */,
 				EB270BE720A22DC100AAE886 /* Main.storyboard */,
 				EB270BEA20A22DC500AAE886 /* Assets.xcassets */,
 				EB270BEC20A22DC500AAE886 /* LaunchScreen.storyboard */,
 				EB270BEF20A22DC500AAE886 /* Info.plist */,
+				EB270C1720A365BB00AAE886 /* on-the-map.entitlements */,
 			);
 			path = "on-the-map";
 			sourceTree = "<group>";
@@ -77,14 +138,32 @@
 		EB270BF520A2416600AAE886 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EB3C599020A95D52005BA045 /* StudentsTableViewController.swift */,
 				EB270BF620A2419500AAE886 /* LoginViewController.swift */,
-				EB270BF820A241BC00AAE886 /* StudentsTableViewController.swift */,
 				EB270BFA20A241D600AAE886 /* StudentsMapViewController.swift */,
 				EB270BFC20A241EC00AAE886 /* AddLocationViewController.swift */,
 				EB270BFE20A241FF00AAE886 /* AddLocationMapViewController.swift */,
-				EB270C0020A2422900AAE886 /* WebViewController.swift */,
+				EB270C0420A265AF00AAE886 /* TabBarController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EB270C0620A3547600AAE886 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB270C1220A35AB700AAE886 /* Clients */,
+				EB270C0720A354AF00AAE886 /* StudentInformation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB270C1220A35AB700AAE886 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				EB13F7D620A3CD7A003CEA53 /* Parse */,
+				EB13F7D520A3CD53003CEA53 /* Udacity */,
+			);
+			path = Clients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB270BF220A22DC500AAE886 /* Build configuration list for PBXNativeTarget "on-the-map" */;
 			buildPhases = (
+				51A9B6395139EB55E424E03A /* [CP] Check Pods Manifest.lock */,
 				EB270BDA20A22DC100AAE886 /* Sources */,
 				EB270BDB20A22DC100AAE886 /* Frameworks */,
 				EB270BDC20A22DC100AAE886 /* Resources */,
+				B67CD27D8954A7407F6C0CF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,6 +200,14 @@
 				TargetAttributes = {
 					EB270BDD20A22DC100AAE886 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -153,18 +242,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51A9B6395139EB55E424E03A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-on-the-map-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B67CD27D8954A7407F6C0CF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-on-the-map/Pods-on-the-map-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-on-the-map/Pods-on-the-map-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB270BDA20A22DC100AAE886 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB270BF920A241BC00AAE886 /* StudentsTableViewController.swift in Sources */,
+				EB270C0520A265AF00AAE886 /* TabBarController.swift in Sources */,
+				EB24D58720A5A65900C06E6B /* ParseConvenience.swift in Sources */,
+				EB13F7D220A3B9E7003CEA53 /* UdacityConstants.swift in Sources */,
+				EB13F7D820A3DC82003CEA53 /* UdacityClient.swift in Sources */,
+				EB13F7DC20A50E30003CEA53 /* ParseConstants.swift in Sources */,
+				EB3C599120A95D52005BA045 /* StudentsTableViewController.swift in Sources */,
 				EB270BFB20A241D600AAE886 /* StudentsMapViewController.swift in Sources */,
 				EB270BFD20A241EC00AAE886 /* AddLocationViewController.swift in Sources */,
+				EB270C0820A354AF00AAE886 /* StudentInformation.swift in Sources */,
+				EB13F7DA20A3FED8003CEA53 /* UdacityConvenience.swift in Sources */,
 				EB270BF720A2419500AAE886 /* LoginViewController.swift in Sources */,
-				EB270C0120A2422900AAE886 /* WebViewController.swift in Sources */,
 				EB270BFF20A241FF00AAE886 /* AddLocationMapViewController.swift in Sources */,
 				EB270BE220A22DC100AAE886 /* AppDelegate.swift in Sources */,
+				EB270C1620A35EB400AAE886 /* ParseClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,11 +449,14 @@
 		};
 		EB270BF320A22DC500AAE886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7D43245D8D85408051661B /* Pods-on-the-map.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "on-the-map/on-the-map.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 794X734999;
 				INFOPLIST_FILE = "on-the-map/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,11 +470,14 @@
 		};
 		EB270BF420A22DC500AAE886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB0BBFBFA94B0FEAD2947DA0 /* Pods-on-the-map.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "on-the-map/on-the-map.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 794X734999;
 				INFOPLIST_FILE = "on-the-map/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

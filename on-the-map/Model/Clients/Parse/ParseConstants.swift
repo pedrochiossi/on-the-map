@@ -41,6 +41,7 @@ struct Parse{
     
     struct ParameterKeys {
         
+        static let Where = "where"
         static let Limit = "limit"
         static let Order = "order"
         static let Skip = "skip"
