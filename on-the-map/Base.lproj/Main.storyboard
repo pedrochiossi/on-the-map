@@ -257,7 +257,7 @@
                                 </state>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WfT-Jk-44t" userLabel="wheel">
-                                <rect key="frame" x="189" y="185" width="37" height="37"/>
+                                <rect key="frame" x="189" y="359.66666666666669" width="37" height="37"/>
                                 <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>
@@ -268,7 +268,7 @@
                             <constraint firstItem="Tj6-lq-hTa" firstAttribute="top" secondItem="s5p-Sn-7jA" secondAttribute="top" constant="20" id="G7J-OJ-6go"/>
                             <constraint firstItem="Tj6-lq-hTa" firstAttribute="centerX" secondItem="s5p-Sn-7jA" secondAttribute="centerX" id="J1L-sd-q0E"/>
                             <constraint firstItem="I31-zD-vwe" firstAttribute="centerX" secondItem="s5p-Sn-7jA" secondAttribute="centerX" id="Qnj-Ph-iqR"/>
-                            <constraint firstItem="WfT-Jk-44t" firstAttribute="centerY" secondItem="s5p-Sn-7jA" secondAttribute="centerY" constant="-175" id="TZW-72-P4G"/>
+                            <constraint firstItem="WfT-Jk-44t" firstAttribute="centerY" secondItem="s5p-Sn-7jA" secondAttribute="centerY" id="TZW-72-P4G"/>
                             <constraint firstItem="I31-zD-vwe" firstAttribute="top" secondItem="Tj6-lq-hTa" secondAttribute="bottom" constant="19" id="cGv-Tp-SWj"/>
                             <constraint firstItem="vzQ-M9-yeH" firstAttribute="top" secondItem="I31-zD-vwe" secondAttribute="bottom" constant="20" id="iRj-Wo-Yw0"/>
                         </constraints>
@@ -286,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxG-vw-nRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1751" y="0.0"/>
+            <point key="canvasLocation" x="-1752.1739130434785" y="0.0"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I8j-ns-Ywz">

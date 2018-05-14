@@ -21,6 +21,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, SFSafariV
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var fbLoginButton: FBSDKLoginButton!
     @IBOutlet weak var signupButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,7 +123,9 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, SFSafariV
             UdacityClient.sharedInstance().udacityLogin(email: email, password: password) { (success, error) in
                 
                 if success {
-                    self.continueLogin()
+                    DispatchQueue.main.async {
+                        self.continueLogin()
+                    }
                 } else {
                     DispatchQueue.main.async(execute: {
                         self.wheel.stopAnimating()
@@ -175,11 +178,13 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, SFSafariV
 
 
     @objc func keyboardWillShow(_ notification:Notification) {
-        if passwordTextField.isFirstResponder{
-            view.frame.origin.y -= 0.5 * getKeyboardHeight(notification)
+        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+            if passwordTextField.isFirstResponder{
+                view.frame.origin.y -= 0.5 * getKeyboardHeight(notification)
+            }
         }
-        
     }
+    
 
     func getKeyboardHeight(_ notification:Notification) -> CGFloat {
         

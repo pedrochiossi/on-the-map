@@ -133,7 +133,10 @@ class AddLocationViewController: UIViewController, UITextFieldDelegate{
     
     
     @objc func keyboardWillShow(_ notification:Notification) {
-        view.frame.origin.y -= 0.5 * getKeyboardHeight(notification)
+        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation){
+            view.frame.origin.y -= 0.5 * getKeyboardHeight(notification)
+        }
+        
     }
     
     func getKeyboardHeight(_ notification:Notification) -> CGFloat {
