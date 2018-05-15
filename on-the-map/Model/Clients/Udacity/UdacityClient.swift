@@ -112,7 +112,7 @@ class UdacityClient: NSObject {
             /* GUARD: Did we get a successful 2XX response? */
             guard
                 let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else {
-                sendError("Your request returned a status code other than 400, 403 or 2xx!")
+                sendError("Your request returned a status code other than 2xx!")
                 return
             }
             
@@ -165,7 +165,7 @@ class UdacityClient: NSObject {
             
             /* GUARD: Did we get a successful 2XX response? */
             guard let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else {
-                sendError("Your request returned a status code other than 2xx!")
+                sendError("Your request returned a status code other than 400, 403 or 2xx!")
                 return
             }
             
