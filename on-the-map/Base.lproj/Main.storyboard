@@ -315,12 +315,12 @@
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="110-qS-siu">
+                            <barButtonItem image="icon_addpin" id="110-qS-siu">
                                 <connections>
                                     <action selector="addStudentLocation:" destination="49e-Tb-3d3" id="LbL-SE-aLO"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Item" image="icon_refresh" id="c6e-th-feL">
+                            <barButtonItem image="icon_refresh" id="c6e-th-feL">
                                 <connections>
                                     <action selector="reloadLocations:" destination="49e-Tb-3d3" id="KSq-lt-T6g"/>
                                 </connections>
@@ -400,6 +400,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_addpin" width="24" height="24"/>
         <image name="icon_listview-deselected" width="75" height="50"/>
         <image name="icon_listview-selected" width="75" height="50"/>
         <image name="icon_mapview-deselected" width="75" height="50"/>
