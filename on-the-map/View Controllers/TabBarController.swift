@@ -17,7 +17,6 @@ class TabBarController: UITabBarController {
 
     }
 
-    
 
     @IBAction func logout(_ sender: Any) {
         
@@ -58,8 +57,6 @@ class TabBarController: UITabBarController {
         }
     }
     
-    
-    
     func overwriteAlert(_ message: String?) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         
@@ -71,7 +68,6 @@ class TabBarController: UITabBarController {
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-    
     
     
     func logOutAlert( _ message: String?) {

@@ -29,7 +29,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, SFSafariV
         configureView()
          if FBSDKAccessToken.currentAccessTokenIsActive() {
             facebookAutoLogin()
-        }
+         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -137,7 +137,6 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, SFSafariV
         }
     }
     
-    
 
     func configureView() {
         
@@ -202,17 +201,11 @@ extension LoginViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
+
     
     func clearTextFields() {
         emailTextField.text = ""
         passwordTextField.text = ""
     }
     
-    
 }
-
-
-
-
-

@@ -130,9 +130,6 @@ extension ParseClient {
         
     }
     
-    
-    
-    
     func buildParameters()->[String:AnyObject] {
         
         let parameters = [    Parse.JSONResponseKeys.UniqueKey: UdacityClient.sharedInstance().userID as AnyObject,
@@ -144,6 +141,5 @@ extension ParseClient {
                               Parse.JSONResponseKeys.Longitude: self.userLongitude as AnyObject]
         return parameters
     }
-    
     
 }

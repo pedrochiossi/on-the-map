@@ -17,7 +17,6 @@ class StudentsMapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
@@ -25,7 +24,6 @@ class StudentsMapViewController: UIViewController, MKMapViewDelegate {
         populateStudentsPins()
     }
     
-
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         

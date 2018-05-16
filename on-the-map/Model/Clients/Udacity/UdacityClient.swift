@@ -203,8 +203,6 @@ class UdacityClient: NSObject {
         completionHandlerForParsedData(true,nil,parsedResult)
     }
     
-    
-    
     // MARK: Create POST Request
     
     private func udacityPOSTRequest(method: String) -> NSMutableURLRequest {
@@ -222,8 +220,5 @@ class UdacityClient: NSObject {
         return request
         
     }
-    
-    
-   
-    
+
 }

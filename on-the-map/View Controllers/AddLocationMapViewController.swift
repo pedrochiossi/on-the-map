@@ -93,11 +93,6 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
         
     }
                 
-
-    
-    
-    
-    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         let reuseId = "pin"
@@ -117,21 +112,16 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
         return pinView
     }
     
-    
-    
     func showAlert( _ message: String?) {
         let alert = UIAlertController(title: "Failed to Add Location!", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
                 
-                
-                
     
     func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
         finishButton.isEnabled = true
     }
-    
     
     func configureUI() {
         let backButton = UIBarButtonItem(title: "Add Location", style: .plain, target: self, action: #selector(goBack))
@@ -142,7 +132,4 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
     }
     
-    
-    
-
 }
