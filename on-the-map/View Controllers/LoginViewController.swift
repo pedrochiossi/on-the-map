@@ -10,6 +10,7 @@ import UIKit
 import Foundation
 import FBSDKLoginKit
 import SafariServices
+import FBSDKCoreKit
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, SFSafariViewControllerDelegate {
     
