@@ -14,7 +14,8 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
     var locationString: String!
     var urlForMap: String!
     var coordinateForMap: CLLocationCoordinate2D!
-
+    
+    @IBOutlet weak var wheel: UIActivityIndicatorView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var finishButton: UIButton!
     
@@ -26,6 +27,7 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        finishButton.isEnabled = false
         showUserAnnotation()
     }
     
@@ -44,12 +46,11 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
         mapView.addAnnotation(annotation)
         let regionToZoom = MKCoordinateRegionMakeWithDistance(coordinateForMap, 2000, 2000)
         mapView.setRegion(regionToZoom, animated: true)
-    
     }
 
     
     @IBAction func postStudentLocation(_ sender: Any) {
-        
+        wheel.startAnimating()
         ParseClient.sharedInstance().userLongitude = coordinateForMap.longitude
         ParseClient.sharedInstance().userLatitude = coordinateForMap.latitude
         ParseClient.sharedInstance().userMediaUrl = urlForMap
@@ -70,6 +71,7 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
             
             if success{
                 DispatchQueue.main.async {
+                    self.wheel.stopAnimating()
                     self.navigationController?.popToRootViewController(animated: true)
                 }
             } else {
@@ -84,6 +86,7 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
         ParseClient.sharedInstance().updateUserInfo() { (success, error) in
             if success{
                 DispatchQueue.main.async {
+                    self.wheel.stopAnimating()
                     self.navigationController?.popToRootViewController(animated: true)
                 }
             } else {
@@ -117,19 +120,18 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-                
     
-    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
-        finishButton.isEnabled = true
-    }
     
     func configureUI() {
         let backButton = UIBarButtonItem(title: "Add Location", style: .plain, target: self, action: #selector(goBack))
         navigationItem.backBarButtonItem = backButton
         navigationItem.title = "Add Location"
         finishButton.layer.cornerRadius = 5.0
-        finishButton.isEnabled = false
         mapView.delegate = self
+    }
+    
+    func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
+        finishButton.isEnabled = true
     }
     
 }

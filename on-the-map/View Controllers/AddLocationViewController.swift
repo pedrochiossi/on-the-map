@@ -41,6 +41,7 @@ class AddLocationViewController: UIViewController, UITextFieldDelegate{
     
     
     func showAlert( _ message: String?) {
+        wheel.stopAnimating()
         let alert = UIAlertController(title: "Location Not Found", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)

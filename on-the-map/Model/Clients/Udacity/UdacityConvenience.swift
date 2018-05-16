@@ -54,11 +54,9 @@ extension UdacityClient {
                 
                 // Get User Data
                 if let lastName = user["last_name"] as? String {
-                    print(lastName)
                     self.lastName = lastName
                 }
                 if let firstName = user["first_name"] as? String{
-                    print(firstName)
                     self.firstName = firstName
                 }
                 completionHandlerForUserData(true,nil)
@@ -93,13 +91,11 @@ extension UdacityClient {
                 }
                 // Get Session Data
                 if let sessionid = session[Udacity.JSONResponseKeys.SessionID] as? String {
-                    print(sessionid)
                     self.sessionID = sessionid
                 }
                 
                 if let userid = account[Udacity.JSONResponseKeys.UserID] as? String {
                     self.userID = userid
-                    print(userid)
                 }
                
                 completionHandlerForGETSession(true,nil)

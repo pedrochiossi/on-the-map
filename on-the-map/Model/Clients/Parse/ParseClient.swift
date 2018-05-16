@@ -122,6 +122,7 @@ class ParseClient: NSObject {
             return
         }
         
+        print(request)
         /* 4. Make the request */
         let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
             
@@ -159,10 +160,9 @@ class ParseClient: NSObject {
     
     
     
-    func createParsePOSTRequestFrom( parameters: [String:AnyObject]) -> URLRequest? {
+    func createParsePOSTRequestFrom(parameters: [String:AnyObject]) -> URLRequest? {
         
-        
-        guard let url = createParseURL(method: Parse.Methods.StudentLocation, pathExtension: nil, [:]) else {
+        guard let url = createParseURL(method: Parse.Methods.StudentLocation, [:]) else {
             return nil
         }
         let request = NSMutableURLRequest(url: url)
@@ -190,12 +190,12 @@ class ParseClient: NSObject {
     
     
     
-    func createParseURL(method: String?, pathExtension: String?,_ parameters: [String: String]) -> URL? {
+    func createParseURL(method: String?,_ parameters: [String: String]) -> URL? {
         
         var components = URLComponents()
         components.scheme = Parse.Constants.ApiScheme
         components.host = Parse.Constants.ApiHost
-        components.path = Parse.Constants.ApiPath + (method ?? "") + (pathExtension ?? "")
+        components.path = Parse.Constants.ApiPath + (method ?? "")
         var queryItems = [URLQueryItem]()
         
         if !parameters.isEmpty {
@@ -212,7 +212,7 @@ class ParseClient: NSObject {
     
     func createParsePUTRequestFrom(parameters: [String:AnyObject]) -> URLRequest? {
         
-        guard let url = createParseURL(method: Parse.Methods.StudentLocation, pathExtension: self.userObjectID , [:]) else {
+        guard let url = createParseURL(method: Parse.Methods.StudentLocation + "/\(self.userObjectID!)", [:]) else {
             return nil
         }
         let request = NSMutableURLRequest(url: url)

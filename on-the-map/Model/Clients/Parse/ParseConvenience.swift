@@ -17,7 +17,7 @@ extension ParseClient {
             Parse.ParameterKeys.Limit: "100",
             Parse.ParameterKeys.Order: "-updatedAt"]
         
-        let url = createParseURL(method: Parse.Methods.StudentLocation, pathExtension: nil, parameters)!
+        let url = createParseURL(method: Parse.Methods.StudentLocation, parameters)!
         
         let request = NSMutableURLRequest(url: url)
         
@@ -54,8 +54,12 @@ extension ParseClient {
             return
         }
         
-        let parameters: [String:String] = [Parse.ParameterKeys.Where: "{uniqueKey:\(uniqueKey)}"]
-        let url = createParseURL(method: Parse.Methods.StudentLocation, pathExtension: nil, parameters)!
+        let parameters: [String:String] = [
+            Parse.ParameterKeys.Where: "{\"uniqueKey\":\"\(uniqueKey)\"}",
+            Parse.ParameterKeys.Order: "-updatedAt"]
+        
+        
+        let url = createParseURL(method: Parse.Methods.StudentLocation, parameters)!
         
         let request = NSMutableURLRequest(url: url)
         
@@ -71,12 +75,11 @@ extension ParseClient {
             }
             if success{
                 if let results = result?[Parse.JSONResponseKeys.Results] as? [[String : AnyObject]] {
-                    let userInfo = StudentInformation.studentsFromResults(results)
-                    self.userObjectID = userInfo[0].objectId
+                    let studentsInfo = StudentInformation.studentsFromResults(results)
+                    self.userObjectID = studentsInfo[0].objectId
                     completionHandlerForUserInfo(true, nil)
                 } else {
                     sendError("Could not find \"results\" in parsed data")
-                    
                 }
             }
         }

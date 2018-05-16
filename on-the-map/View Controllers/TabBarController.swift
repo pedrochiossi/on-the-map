@@ -47,9 +47,7 @@ class TabBarController: UITabBarController {
                         self.overwriteAlert("User \(userName) has already posted a Student Location. Would you like to overwrite their Location?")
                     }
                 } else {
-                
-                print(error?.localizedDescription ?? "Unknown error") // i guees it's not working :(
-                DispatchQueue.main.async {
+                    DispatchQueue.main.async {
                     let addLocationVC = self.storyboard?.instantiateViewController(withIdentifier: "addLocationVC") as! AddLocationViewController
                     self.navigationController?.pushViewController(addLocationVC, animated: true)
                 }
