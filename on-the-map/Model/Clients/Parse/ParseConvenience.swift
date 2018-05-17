@@ -34,7 +34,7 @@ extension ParseClient {
             if success{
                 if let results = result?[Parse.JSONResponseKeys.Results] as? [[String : AnyObject]] {
                     let studentsInfo = StudentInformation.studentsFromResults(results)
-                    self.studentsInformation = studentsInfo
+                    DataSource.sharedInstance.studentsInformation = studentsInfo
                     completionHandlerForStudentsInfo(true, nil)
                 } else {
                     sendError("Could not find \"results\" in parsed data")

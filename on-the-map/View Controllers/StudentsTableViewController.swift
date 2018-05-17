@@ -12,6 +12,7 @@ class StudentsTableViewController: UITableViewController {
     
     
     @IBOutlet weak var wheel: UIActivityIndicatorView!
+    
 
     
     override func viewDidLoad() {
@@ -21,20 +22,20 @@ class StudentsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ParseClient.sharedInstance().studentsInformation.count
+        return DataSource.sharedInstance.studentsInformation.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentsCell", for: indexPath) as UITableViewCell
-        let student = ParseClient.sharedInstance().studentsInformation[indexPath.row]
+        let student = DataSource.sharedInstance.studentsInformation[indexPath.row]
         cell.textLabel?.text = student.firstName! + " " + student.lastName!
         cell.detailTextLabel?.text = student.mediaUrl!
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let urlToOpen = ParseClient.sharedInstance().studentsInformation[indexPath.row].mediaUrl {
+        if let urlToOpen = DataSource.sharedInstance.studentsInformation[indexPath.row].mediaUrl {
             if let url = URL(string: urlToOpen) {
                 if UIApplication.shared.canOpenURL(url) {
                     let sfVC = SFSafariViewController(url:url)
@@ -49,7 +50,7 @@ class StudentsTableViewController: UITableViewController {
     
     @objc func reload() {
         wheel.startAnimating()
-        ParseClient.sharedInstance().studentsInformation.removeAll()
+        DataSource.sharedInstance.studentsInformation.removeAll()
         ParseClient.sharedInstance().getStudentsInfo() { (success, error) in
             if success{
                 DispatchQueue.main.async {

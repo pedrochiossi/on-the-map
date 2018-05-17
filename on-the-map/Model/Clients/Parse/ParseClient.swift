@@ -16,7 +16,7 @@ class ParseClient: NSObject {
     var userMediaUrl: String?
     var userLatitude: Double?
     var userLongitude: Double?
-    var studentsInformation = [StudentInformation]()
+ 
     
     
     override init() {
