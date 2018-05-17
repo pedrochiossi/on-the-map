@@ -34,7 +34,7 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
 
     
     @objc func goBack() {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     
@@ -72,7 +72,7 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
             if success{
                 DispatchQueue.main.async {
                     self.wheel.stopAnimating()
-                    self.navigationController?.popToRootViewController(animated: true)
+                    self.performSegue(withIdentifier: "goBackToTBC", sender: self)
                 }
             } else {
                 self.showAlert(error?.localizedDescription ?? "Uknonwn error")
@@ -87,7 +87,7 @@ class AddLocationMapViewController: UIViewController, MKMapViewDelegate {
             if success{
                 DispatchQueue.main.async {
                     self.wheel.stopAnimating()
-                    self.navigationController?.popToRootViewController(animated: true)
+                    self.performSegue(withIdentifier: "goBackToTBC", sender: self)
                 }
             } else {
                 self.showAlert(error?.localizedDescription ?? "Uknonwn error")

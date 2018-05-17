@@ -56,15 +56,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pjr-AN-yw9" userLabel="wheel">
-                                <rect key="frame" x="189" y="359.66666666666669" width="37" height="37"/>
-                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_world" translatesAutoresizingMaskIntoConstraints="NO" id="0gX-LH-ITC">
-                                <rect key="frame" x="181" y="46" width="52" height="67"/>
+                                <rect key="frame" x="181" y="90" width="52" height="67"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4ce-0R-iRg">
-                                <rect key="frame" x="89" y="163" width="236" height="125"/>
+                                <rect key="frame" x="89" y="207" width="236" height="125"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A4O-Ea-3Mg" userLabel="Enter Location">
                                         <rect key="frame" x="0.0" y="0.0" width="236" height="35"/>
@@ -108,14 +104,18 @@
                                     <constraint firstAttribute="trailing" secondItem="Ooa-C9-VHK" secondAttribute="trailing" id="o3w-4s-lGf"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pjr-AN-yw9" userLabel="wheel">
+                                <rect key="frame" x="189" y="251" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pjr-AN-yw9" firstAttribute="centerY" secondItem="wkk-JF-mS4" secondAttribute="centerY" id="7cG-Nv-oUb"/>
+                            <constraint firstItem="pjr-AN-yw9" firstAttribute="centerX" secondItem="4ce-0R-iRg" secondAttribute="centerX" id="2Q1-5X-MPL"/>
                             <constraint firstItem="0gX-LH-ITC" firstAttribute="top" secondItem="wkk-JF-mS4" secondAttribute="top" constant="26" id="EIq-Hd-ul4"/>
+                            <constraint firstItem="pjr-AN-yw9" firstAttribute="centerY" secondItem="4ce-0R-iRg" secondAttribute="centerY" id="Fap-qQ-JUx"/>
                             <constraint firstItem="4ce-0R-iRg" firstAttribute="centerX" secondItem="wkk-JF-mS4" secondAttribute="centerX" id="HoH-13-oG7"/>
                             <constraint firstItem="4ce-0R-iRg" firstAttribute="top" secondItem="0gX-LH-ITC" secondAttribute="bottom" constant="50" id="JyJ-Xo-Afm"/>
-                            <constraint firstItem="pjr-AN-yw9" firstAttribute="centerX" secondItem="wkk-JF-mS4" secondAttribute="centerX" id="Pat-KL-07j"/>
                             <constraint firstItem="0gX-LH-ITC" firstAttribute="centerX" secondItem="wkk-JF-mS4" secondAttribute="centerX" id="ryg-Xz-hiE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wkk-JF-mS4"/>
@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODD-Dg-r3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2790" y="-331"/>
+            <point key="canvasLocation" x="3765.217391304348" y="-333.42391304347831"/>
         </scene>
         <!--Add Location Map View Controller-->
         <scene sceneID="SOk-m6-Hty">
@@ -179,11 +179,13 @@
                         <outlet property="finishButton" destination="gbw-Pe-YTA" id="9bb-ai-wG5"/>
                         <outlet property="mapView" destination="2ES-Gm-ggW" id="Pry-4z-bkh"/>
                         <outlet property="wheel" destination="qPt-l8-gqD" id="v8I-Jj-NYI"/>
+                        <segue destination="nQC-n7-4qu" kind="unwind" identifier="goBackToTBC" unwindAction="unwindToTabBarControllerWithSegue:" id="qeU-RY-IbK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83t-WN-acq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nQC-n7-4qu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3725" y="-332"/>
+            <point key="canvasLocation" x="4631.884057971015" y="-332.60869565217394"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="BGz-is-42K">
@@ -264,20 +266,20 @@
                                 </state>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WfT-Jk-44t" userLabel="wheel">
-                                <rect key="frame" x="189" y="359.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="189" y="190.66666666666666" width="37" height="37"/>
                                 <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vzQ-M9-yeH" firstAttribute="centerX" secondItem="s5p-Sn-7jA" secondAttribute="centerX" id="7tH-fv-Yd6"/>
-                            <constraint firstItem="WfT-Jk-44t" firstAttribute="centerX" secondItem="s5p-Sn-7jA" secondAttribute="centerX" id="9WL-fX-ATh"/>
                             <constraint firstItem="Tj6-lq-hTa" firstAttribute="top" secondItem="s5p-Sn-7jA" secondAttribute="top" constant="20" id="G7J-OJ-6go"/>
                             <constraint firstItem="Tj6-lq-hTa" firstAttribute="centerX" secondItem="s5p-Sn-7jA" secondAttribute="centerX" id="J1L-sd-q0E"/>
                             <constraint firstItem="I31-zD-vwe" firstAttribute="centerX" secondItem="s5p-Sn-7jA" secondAttribute="centerX" id="Qnj-Ph-iqR"/>
-                            <constraint firstItem="WfT-Jk-44t" firstAttribute="centerY" secondItem="s5p-Sn-7jA" secondAttribute="centerY" id="TZW-72-P4G"/>
                             <constraint firstItem="I31-zD-vwe" firstAttribute="top" secondItem="Tj6-lq-hTa" secondAttribute="bottom" constant="19" id="cGv-Tp-SWj"/>
                             <constraint firstItem="vzQ-M9-yeH" firstAttribute="top" secondItem="I31-zD-vwe" secondAttribute="bottom" constant="20" id="iRj-Wo-Yw0"/>
+                            <constraint firstItem="WfT-Jk-44t" firstAttribute="centerY" secondItem="I31-zD-vwe" secondAttribute="centerY" id="vhK-Mc-RgS"/>
+                            <constraint firstItem="WfT-Jk-44t" firstAttribute="centerX" secondItem="I31-zD-vwe" secondAttribute="centerX" id="zgk-LJ-wWT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="s5p-Sn-7jA"/>
                     </view>
@@ -404,6 +406,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWE-kg-faL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="809" y="377"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tjB-bV-JUc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0d-0l-HJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="addLocationNC" automaticallyAdjustsScrollViewInsets="NO" id="q16-jJ-Oma" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ncC-g9-tMR">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hD2-N1-h1c" kind="relationship" relationship="rootViewController" id="LCn-oN-S2a"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2857.971014492754" y="-333.42391304347831"/>
         </scene>
     </scenes>
     <resources>

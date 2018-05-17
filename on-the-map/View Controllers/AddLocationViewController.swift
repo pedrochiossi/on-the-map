@@ -39,22 +39,6 @@ class AddLocationViewController: UIViewController, UITextFieldDelegate{
     }
     
     
-    
-    func showAlert( _ message: String?) {
-        wheel.stopAnimating()
-        let alert = UIAlertController(title: "Location Not Found", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
-    }
-    
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    
-    
     // MARK : Geolocation
     
     @IBAction func findLocation(_ sender: Any) {
@@ -97,21 +81,35 @@ class AddLocationViewController: UIViewController, UITextFieldDelegate{
     
 
     @objc func cancel() {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
-    // MARK View Configuration
+    // MARK: View Configuration
     
     func configureUI() {
         let cancelButton = UIBarButtonItem(title: "CANCEL", style: .plain, target: self, action: #selector(cancel))
         self.navigationItem.leftBarButtonItem = cancelButton
-        self.navigationItem.title = "Add Location"
         locationTextField.delegate = self
         urlTextField.delegate = self
         findLocationButton.layer.cornerRadius = 4.0
         locationTextField.layer.cornerRadius = 4.0
         urlTextField.layer.cornerRadius = 4.0
     }
+    
+    
+    func showAlert( _ message: String?) {
+        wheel.stopAnimating()
+        let alert = UIAlertController(title: "Location Not Found", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     
     //  MARK: Keyboard Notification Methods
     

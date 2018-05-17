@@ -16,8 +16,10 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
 
     }
-
-
+    
+    
+    @IBAction func unwindToTabBarController(segue: UIStoryboardSegue) {}
+    
     @IBAction func logout(_ sender: Any) {
         
         
@@ -48,8 +50,8 @@ class TabBarController: UITabBarController {
                     }
                 } else {
                     DispatchQueue.main.async {
-                    let addLocationVC = self.storyboard?.instantiateViewController(withIdentifier: "addLocationVC") as! AddLocationViewController
-                    self.navigationController?.pushViewController(addLocationVC, animated: true)
+                    let addLocationNC = self.storyboard?.instantiateViewController(withIdentifier: "addLocationNC") as! UINavigationController
+                    self.present(addLocationNC, animated: true, completion: nil)
                 }
             }
         }
@@ -59,8 +61,8 @@ class TabBarController: UITabBarController {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title:"OK", style: .default, handler: { action in
-            let addLocationVC = self.storyboard?.instantiateViewController(withIdentifier: "addLocationVC") as! AddLocationViewController
-            self.navigationController?.pushViewController(addLocationVC, animated: true)
+            let addLocationNC = self.storyboard?.instantiateViewController(withIdentifier: "addLocationNC") as! UINavigationController
+            self.present(addLocationNC, animated: true, completion: nil)
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))

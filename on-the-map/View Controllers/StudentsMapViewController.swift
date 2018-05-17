@@ -20,8 +20,8 @@ class StudentsMapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
-        NotificationCenter.default.addObserver(self, selector: #selector(StudentsMapViewController.reloadInputViews), name: Notification.Name(rawValue: refreshNotificationKey), object: nil)
         populateStudentsPins()
+        NotificationCenter.default.addObserver(self, selector: #selector(StudentsMapViewController.reloadInputViews), name: Notification.Name(rawValue: refreshNotificationKey), object: nil)
     }
     
 
@@ -79,7 +79,7 @@ class StudentsMapViewController: UIViewController, MKMapViewDelegate {
     
     func createAnotations() {
         
-        let locations = ParseClient.sharedInstance().studentsInformation
+        let locations = DataSource.sharedInstance.studentsInformation
         for dictionary in locations {
             // create CLLocationDegree values from parsed values.
             var lat: CLLocationDegrees?
@@ -112,7 +112,7 @@ class StudentsMapViewController: UIViewController, MKMapViewDelegate {
      override func reloadInputViews() {
         mapView.removeAnnotations(pins)
         pins.removeAll()
-        ParseClient.sharedInstance().studentsInformation.removeAll()
+        DataSource.sharedInstance.studentsInformation.removeAll()
         populateStudentsPins()
     }
     

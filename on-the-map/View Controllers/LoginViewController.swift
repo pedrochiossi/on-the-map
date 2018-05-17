@@ -98,7 +98,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, SFSafariV
     func continueLogin() {
             let mapNC = self.storyboard?.instantiateViewController(withIdentifier: "studentsNC") as! UINavigationController
             self.present(mapNC, animated: true, completion: nil)
-        }
+    }
         
     
     
@@ -155,7 +155,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, SFSafariV
             let alert = UIAlertController(title: "Login Failed!", message: message, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
-        }
+    }
     
     // Keyboard Notification Methods
 
