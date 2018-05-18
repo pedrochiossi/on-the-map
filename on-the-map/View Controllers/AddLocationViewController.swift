@@ -57,10 +57,10 @@ class AddLocationViewController: UIViewController, UITextFieldDelegate{
         CLGeocoder().geocodeAddressString(mapString) { (placemarks, error) in
             
             guard (error == nil) else {
-                if error.debugDescription.contains("2"){
+                if error.debugDescription.contains("Code=2"){
                     self.showAlert("Network Failure!")
-                } else if error.debugDescription.contains("8"){
-                    self.showAlert("Could not find any location matching the string: \(mapString)")
+                } else if error.debugDescription.contains("Code=8"){
+                    self.showAlert("Could not find any location matching the string: "\(mapString)".")
                 } else {
                     self.showAlert(error.debugDescription)
                 }
