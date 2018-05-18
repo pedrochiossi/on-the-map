@@ -46,7 +46,7 @@ class TabBarController: UITabBarController {
             if success{
                     DispatchQueue.main.async {
                         let userName = UdacityClient.sharedInstance().firstName! + " " + UdacityClient.sharedInstance().lastName!
-                        self.overwriteAlert("User \(userName) has already posted a Student Location. Would you like to overwrite their Location?")
+                        self.overwriteAlert("User "\(userName" has already posted a Student Location. Would you like to overwrite their Location?")
                     }
                 } else {
                     DispatchQueue.main.async {
